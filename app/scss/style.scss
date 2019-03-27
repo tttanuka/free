@@ -113,11 +113,14 @@ body{
 
 	}
 }
-
+.nav-header{
+	display: flex;	
+	justify-content: space-between;
+}
 
 
 .logo{
-	float:left;
+	/* float:left; */
 	font-family: $roboto;
 	font-weight: 100;
 	font-size: 30px;
@@ -132,7 +135,7 @@ body{
 }
 
 .nav-header__menu{
-	float: right;
+	/* float: right; */
 		ul{
 		margin-right: -18px;
 		
@@ -305,9 +308,9 @@ body{
 	}
 }
 
-.sevices__items{
+.services__items{
 	display: flex;
-	margin:0 -15px;
+	/* margin:0 -15px; */
 	.service__item{
 		width: 33.33%;
 		margin:0 15px;
@@ -336,10 +339,10 @@ body{
 			min-height: 100px;
     		margin-bottom: 35px;
 		}
-.service__item-detals{
+.service__item-details{
 			display: flex;
 			justify-content:space-between;
-			position: relative;
+			
 			& .service__item-button{
 				font-family: $roboto;
 				font-weight: 500;
@@ -349,17 +352,17 @@ body{
 				padding: 0 20px;
 				border: 1px solid $yellow;
 				border-right: 20px solid $yellow;
-				 
+				 position: relative;
 			}
 			.service__item-button:before{
 				content: "\f105";
 				font-family: 'icomoon';
 				position: absolute;
 				top: 0px;
-				left: 124px;
+				left: 121px;
 				color:#fff;
 				font-size: 14px;}
-			& .detals{
+			& .details a{
 				font-family: $roboto;
 				line-height: 38px;
 				text-decoration: underline;
@@ -407,13 +410,13 @@ body{
 		font-family: 'icomoon';
 		position: absolute;
 		top: 0px;
-		left: 124px;
+		left: 170px;
 		color:#fff;
 		font-size: 14px;}
 
 }
 
-.advice__info{
+/* .advice__info{
 	width: 450px;
 	margin-left: 140px;
 	position: relative;
@@ -439,7 +442,7 @@ body{
 	.advice__text{
 		letter-spacing: 1px
 	}
-}
+} */
 
 
 .advice{
@@ -454,7 +457,7 @@ font-family: $roboto;
 	width: 100%;
 	height: 40px;
 	margin-top: 6px;
-	margin-bottom: 18px;
+	margin-bottom: 19px;
 	padding-left: 5px;
 	padding-right: 5px;
 	outline:none;
@@ -484,9 +487,8 @@ font-family: $roboto;
   appearance: none;
   position: relative;
   outline:none;
-  color:#282828;
-  & .select-first{
-  color:#cdcdcd}
+  color: #e6e6e6
+  
 
   
 }
@@ -513,7 +515,91 @@ font-family: $roboto;
   	z-index: 10;
   	transform: rotate(90deg);
 	}
-}
+
 }
 
 
+}
+
+
+ option/* :nth-child(1) */{
+	color: #282828;
+}
+
+.advice__button a{
+	position: relative;
+	font-family: $roboto;
+		font-weight: 500;
+		color:#282828;
+		letter-spacing: 2px;
+		line-height: 38px;
+		padding: 0 20px;
+		border: 1px solid $yellow;
+		border-right: 20px solid $yellow;
+		position: relative;
+		margin-bottom: 45px;
+		float: right;
+		&:before{
+  	content: "\f105";
+  	font-family: 'icomoon';
+  	position: absolute;
+  	right: -16px;
+  	color: #282828;
+  	
+		}}
+
+	.advice__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+
+.merit__background{
+background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+	background-image: url('../img/merit.jpg');
+}
+
+.merit__wrapper{
+	display: flex;
+}
+
+.merit__item{
+	width: 33.33%;
+	text-align: center;
+	padding: 0 10px;
+	.merit__titel{
+		font-family: $roboto;
+		font-size: 18px;
+		line-height: 24px;
+		color:#fff;
+		font-weight: 500;
+		padding-bottom: 20px;
+		}
+	.merit__text{
+		color:#d3d2d2;
+		line-height: 24px;
+		margin-bottom: 40px;
+	}
+
+}
+
+.merit__icon{
+	height: 45px;
+	width: 45px;
+	border: 1px solid $yellow;
+	background-color: transparent;
+	position: relative;
+	margin: 55px auto 25px auto;
+	&:before{
+	content: "\f00c";
+  	font-family: 'icomoon';
+  	position: absolute;
+  	color:#fff;
+  	top:50%;
+  	left:50%;
+  	transform: translate(-50%, -50%);
+
+
+	} 
+}
